@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Keyframes</title>
+    <style>  
+        .Container{
+            background-color: aquamarine;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+             animation-name: ankita;
+             animation-duration: 2s; 
+             animation-iteration-count: 4;  
+            animation-fill-mode:forwards; 
+             animation-timing-function: 4; 
+             animation-direction:alternate-reverse;  
+        
+        } 
+          @keyframes ankita{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 400px;
+            }
+        }  
+         /* @keyframes ankita1{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top:250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            } 
+         }  */
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <div class="box">
+            This is Box.
+        </div>
+
+    </div>
+    
+</body>
+</html>

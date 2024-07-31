@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+         }
+
+        .card{
+            padding: 10px;
+            margin: 12px;
+            color: blueviolet;
+            border: 2px solid red;
+
+/* box-shadow spread radius on up side */
+             /* box-shadow: -7px -5px rgb(37, 24, 24);  */
+
+/* box-shadow spread radius in down side */
+            /* box-shadow: 7px 5px rgb(37, 24, 24);  */
+    
+/* box-shadow blur radius spread radius color */
+            /* box-shadow: 9px 8px 10px rgb(47, 41, 41); */
+
+/* box shadow increase darknes */
+            /* box-shadow: -7px -5px 34px 34px rgba(red, green, blue, alpha); */ 
+            box-shadow:inset 3px 5px green;
+            box-shadow: 3px 5px blue , 4px 7px red;
+
+
+        }
+        #card-1{
+            background-color: burlywood;
+            color: blue;
+        }
+        #card-2{
+            background-color:crimson;
+            color:cornsilk;
+        }
+        #card-3{
+            background-color: aquamarine;
+            color: darkmagenta;
+        }
+        .card h2{
+            text-shadow: 9px 8px 7px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is c++ Course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium cumque recusandae vel eius officia, commodi asperiores cum libero, doloribus beatae facere numquam, temporibus ratione. Eos, fugiat! Ab architecto rem dolorum praesentium ratione vitae doloribus!</p>
+            </div>
+    <div class="container">
+    <div class="card" id="card-2">
+            <h2>This is java Course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis sit beatae explicabo eos saepe, adipisci dolor praesentium possimus quibusdam hic! Cupiditate architecto obcaecati doloremque labore! Perferendis at nobis natus consequatur. Fuga neque labore dolores.</p>
+    </div>
+    <div class="container">
+    <div class="card" id="card-3">
+            <h2>This is Python Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In atque magni fugiat aspernatur, vel rem aut repellat. Nisi cupiditate iste odit eligendi eaque? Aliquid voluptas quis, vero a sint sunt nesciunt dolores mollitia ullam.</p>
+    </div>
+     
+        </div>
+
+
+</body>
+</html>

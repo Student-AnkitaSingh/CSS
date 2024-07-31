@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries + CSS grid</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap: 1rem;
+             grid-template-areas: 
+            ' navbar navbar  navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'; 
+        }
+         @media only screen and (max-width:300px) {
+            body{
+                background-color: blue;
+            }
+            .container{
+                display: grid;
+            grid-gap: 1rem;
+             grid-template-areas: 
+            ' navbar navbar  navbar navbar'
+                'section section section section'
+                ' aside aside aside  aside'
+                'footer footer footer footer';
+            } 
+            aside{
+                display: none;
+            }
+         }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: red;
+            }
+            .container{
+                display: grid;
+            grid-gap: 1rem;
+             grid-template-areas: 
+            ' navbar navbar  navbar navbar'
+                'section section section section'
+                ' aside aside aside  aside'
+                'footer footer footer footer';
+            } 
+            span{
+                display: block;
+                padding: 10px 34px;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body{
+                background-color: yellow;
+            }
+            .container{
+                display:grid;
+            grid-gap: 1rem;
+             grid-template-areas: 
+            ' navbar navbar  navbar navbar'
+                'section section section section'
+                ' aside aside aside  aside'
+                'footer footer footer footer';
+            } 
+            span{
+                display: block;
+                text-align: center;
+            }
+            
+            
+        }
+        @media only screen and (min-width:800px)  {
+            body{
+                background-color:fuchsia;
+            }
+            .container{
+                display: grid;
+            grid-gap: 1rem;
+             grid-template-areas: 
+            ' navbar navbar  navbar navbar'
+                'section section section section'
+                ' aside aside aside  aside'
+                'footer footer footer footer';
+            } 
+            span{
+                display: block;
+                text-align: center;
+            }
+            }
+            .border-now{
+                border: 2ps solid black;
+                padding: 10px 34px;
+                background-color:rgb(241, 106, 106);
+                color: white;
+                width: 100%;
+                left: 100%; 
+            }
+            nav{
+                grid-area: navbar;
+            }
+            section{
+                grid-area: section;
+            }
+            aside{
+                grid-area: aside;
+            }
+            footer{
+                grid-area: footer;
+                text-align: center;
+            }
+</style>
+<body>
+    <div class="border-now">
+        <span>Home</span>
+        <span>About</span>
+        <span>Services</span>
+        <span>Contact Us</span>
+    </div>
+    <div class="container">
+        <!-- <nav class="border-now">
+            Home About Contact Us
+        </nav> -->
+        <section class="border-now">
+          <h2>Learn CSS in hindi</h2>
+        </section>
+        <aside class="border-now">
+            <h1>More Aboout us</h1>
+        </aside>
+    </div>
+    <footer  class="border-now">copyright Code with Harry </footer>
+
+</body>
+</h

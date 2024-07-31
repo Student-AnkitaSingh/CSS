@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            color: aqua;
+            /* background-color: chocolate; */
+        }
+          div p{
+            font-size: 20px;
+            background-color: blueviolet;
+            color: white;
+        } 
+
+/* If p is contained by any li which is contained by div */
+        div li p{
+            background-color: yellow;
+        }
+
+/* If P is right inside div then this CSS will be applied */
+         div >p{
+            color: deeppink;
+            background-color: aliceblue;
+            font-weight: bold; 
+         } 
+
+/* If P is right after div i.e  P is the next sibiling of div */
+         div + p{
+            font-style: italic;
+            background-color: red;
+        }        
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>This is another paragraph inside</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is paragraph</p>
+
+        </div>
+        <p>this is another paragraph</p>
+
+    </div>
+    <p>This is outermost paragraph</p>
+    
+</body>
+</html>
